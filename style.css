@@ -266,6 +266,7 @@ footer{
         flex-direction: column-reverse;        
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
     .head-image{
         width: 100%;
@@ -280,6 +281,10 @@ footer{
     .head-title{
         font-size: 30px;
     }
+    .head-info p{
+        margin: 0;
+        padding: 0;
+    }
     .logo{
         width: 100%;
         display: grid;
@@ -292,9 +297,15 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
     }
+    .product-grid{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .newsletter{
         width: 100%;
-        padding: 0;
+        padding: 0 0 10px 0;
+        margin-left: 0;
+        margin-right: 0;
         display: flex;
         flex-direction: column;
     }
