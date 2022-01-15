@@ -251,9 +251,85 @@ footer{
 /* ----------------
     Media Queries
 ----------------- */
+
+/* Resposive for mobile devices */
+@media only screen and (max-width: 688px) {
+    .nav-menu{
+        display: none;
+    }
+    #cart{
+        display: visible;
+    }
+    .head-content{
+        flex-direction: column-reverse;        
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .head-image{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+    }
+    .head-image img{
+        width: 80%;
+        height: 80%;
+    }
+    .head-info{
+        padding: 0;
+        margin: 0;
+    }
+    .head-title{
+        font-size: 30px;
+    }
+    .logo{
+        width: 80%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-row-gap: 20px;
+        padding: 30px 0;
+    }
+    .logo img{
+        width: 70%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .product-image img{
+        width: 100%;
+    }
+    .product-detail{
+        text-align: center;
+        padding: 0 10%;
+    }
+    .newsletter{
+        width: 100%;
+        padding: 0 0 10px 0;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-form input[type="text"]{
+        display: block;
+        width: 150px;
+    }
+    .subscribe-text{
+        padding:2px 20px;
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+        color: #fff;
+    }
+}
  
 /* Resposive for tablet devices */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width:688px) and (max-width: 992px) {
     .brand-heading{
         font-size: 24px;
     }
@@ -340,83 +416,5 @@ footer{
         color: #fff;
     }
 }
-
-
-/* Resposive for mobile devices */
-@media only screen and (max-width: 688px) {
-    .nav-menu{
-        display: none;
-    }
-    #cart{
-        display: visible;
-    }
-    .head-content{
-        flex-direction: column-reverse;        
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-    .head-image{
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        background-image: none;
-    }
-    .head-image img{
-        width: 80%;
-        height: 80%;
-    }
-    .head-info{
-        padding: 0;
-        margin: 0;
-    }
-    .head-title{
-        font-size: 30px;
-    }
-    .logo{
-        width: 80%;
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-row-gap: 20px;
-        padding: 30px 0;
-    }
-    .logo img{
-        width: 70%;
-    }
-    .products{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-    }
-    .product-image img{
-        width: 100%;
-    }
-    .product-detail{
-        text-align: center;
-        padding: 0 10%;
-    }
-    .newsletter{
-        width: 100%;
-        padding: 0 0 10px 0;
-        margin-left: 0;
-        margin-right: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .input-form input[type="text"]{
-        display: block;
-        width: 150px;
-    }
-    .subscribe-text{
-        padding:2px 20px;
-        text-align: center;
-    }
-    footer{
-        width: 100%;
-        color: #fff;
-    }
-
-  }
 
  
